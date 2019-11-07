@@ -2,13 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>http://joespelde.github.io/my-first-post.html</loc>
+    <loc>https://joespelde.github.io/my-first-post.html</loc>
     <priority>0.8</priority>
   </url>
 
 
   <url>
-    <loc>http://joespelde.github.io/about.html</loc>
+    <loc>https://joespelde.github.io/about.html</loc>
     <priority>1.0</priority>
   </url>
 

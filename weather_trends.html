@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Joe Spelde">
-  <meta name="description" content="Posts by Joe Spelde on this site">
+  <meta name="description" content="Exploring Weather Trends | Project 1: Exploring Weather Trends Step 1: Extract data The data for this project was held within the city_list database. I...">
 
   <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
   <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">  
@@ -25,9 +25,10 @@
  
 
 
-  <meta name="keywords" content="sql, excel, project">
+<meta name="keywords" content="sql, excel, project">
 
-  <title>Author: Joe Spelde | Joe Spelde</title>
+
+  <title>Exploring Weather Trends</title>
 
   
 </head>
@@ -90,23 +91,40 @@
             <div id="primary" class="content-area">
               <div id="main" class="site-main" role="main">
                 <div class="article-container">
-<article class="post">
-	<div class="blog-item-wrap">
-		<div class="post-inner-content">
-			<header class="entry-header page-header">
-				<span class="cat-item"><time datetime="2019-11-03 00:00:00-05:00">Sun 03 November 2019</time></span>
-				<h1 class="entry-title"><a href="https://joespelde.github.io/weather_trends.html">Exploring Weather Trends</a></h1>
-			</header><!-- .entry-header -->
-			<div class="entry-content">
-				
-        	</div><!-- .entry-content -->
-		</div>
-	</div>
+<article>
+  <div class="blog-item-wrap">
+    <div class="post-inner-content">
+      <header class="entry-header page-header">
+        <span class="cat-item"><time datetime="2019-11-03 00:00:00-05:00">Sun 03 November 2019</time></span>
+        <h1 class="entry-title"><a href="https://joespelde.github.io/weather_trends.html">Exploring Weather Trends</a></h1>
+      </header><!-- .entry-header -->
+      <div class="fb-like" data-href="https://joespelde.github.io/weather_trends.html" data-layout="standard" data-action="like" data-show-faces="false" data-share="true"></div>
+      <div class="entry-content">
+        <h1>Project 1: Exploring Weather Trends</h1>
+<h3>Step 1: Extract data</h3>
+<p>The data for this project was held within the <code>city_list</code> database. I chose to compare the average temperatures of Chicago compared to global averages. My SQL queries were quite simple:</p>
+<div class="highlight"><pre><span></span>    <span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">city_list</span>
+    <span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">city_data</span> <span class="k">where</span> <span class="n">city</span><span class="o">=</span><span class="err">’</span><span class="n">Chicago</span><span class="err">’</span>
+    <span class="k">SELECt</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">global_data</span>
+</pre></div>
+
+
+<p>I then uploaded the csv files <a href="https://docs.google.com/spreadsheets/d/1X47j_FE1cy8g1UpGpGc_GJoBp3aPhkCRWGyTGW3VGNY/edit?usp=sharing" title="Exploring Weather Trends">here</a> and began my analysis.</p>
+<h3>Step 2: Calculate moving averages</h3>
+<p>I decided to use a 10 year moving average for both Chicago and global temps, as this seemed to smooth out the "noise" without taking away major fluctuations.</p>
+<h3>Step 3: Display data</h3>
+<p>I loaded the data into a line chart and added trend lines.
+The result:<br>
+<img alt="Chart" src="https://joespelde.github.io/images/temp.png"></p>
+      </div><!-- .entry-content -->
+      <br /><br />
+      <div class="article_meta">
+        Tags:
+          <a href="https://joespelde.github.io/tag/sql.html">sql</a>,          <a href="https://joespelde.github.io/tag/excel.html">excel</a>,          <a href="https://joespelde.github.io/tag/project.html">project</a>      </div>
+    </div>
+  </div>
 </article><!-- #post-## -->
                 </div>
-<footer>
-</footer>
-<div class="article_meta"></div>
               </div><!-- #main -->
           </div><!-- #primary -->
         </div>
@@ -139,6 +157,7 @@
       window.scroll(0, document.getElementById('main').offsetTop);
     }})
   </script>
+
 
 
 
